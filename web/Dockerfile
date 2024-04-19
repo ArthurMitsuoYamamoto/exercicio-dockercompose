@@ -5,7 +5,7 @@ FROM python:3.9-slim
 RUN apt-get update -y
 
 # Instala as dependências necessárias para o psycopg2 (um adaptador de banco de dados PostgreSQL para Python)
-RUN apt-get install libpq-dev python-dev -y
+RUN apt-get install libpq-dev python-dev-is-python3 -y
 
 # Cria um novo grupo chamado 'flaskgroup'
 RUN groupadd flaskgroup && \
